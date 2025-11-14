@@ -40,15 +40,21 @@ body {
   margin-bottom: 5rem;
 }
 
+@media (max-width: 768px) {
+  .logo-svg {
+    margin-bottom: 3.5rem;
+  }
+}
+
 .logo {
-  width: 60vw;     /* occupe 60% de la largeur de la fenêtre */
-  max-width: 600px; /* limite pour les grands écrans */
+  width: 60vw;
+  max-width: 600px;
   height: auto;
 }
 
 @media (max-width: 768px) {
   .logo {
-    width: 75vw;
+    width: 75w;
     max-width: 320px;
   }
 }
@@ -81,6 +87,17 @@ body {
 
 .btn.yellow:hover {
   background: #ffe94d;
+}
+
+.btn.white {
+  background: #ffffff;
+  color: #000;
+  border: none;
+  font-weight: 600;
+}
+
+.btn.white:hover {
+  background: #ffde00;
 }
 
 .btn.outline {
@@ -314,6 +331,9 @@ body.ready .buttons a:nth-child(2) {
 }
 body.ready .buttons a:nth-child(3) {
   animation: fadeUp var(--dur-buttons) var(--ease) 1.8s forwards;
+}
+body.ready .buttons a:nth-child(4) {
+  animation: fadeUp var(--dur-buttons) var(--ease) 2.0s forwards;
 }
 
 @keyframes fadeUp {
